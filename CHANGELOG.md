@@ -1,3 +1,9 @@
+## [1.1.0-rc.1](https://github.com/mpekhota/semantic-release/compare/v1.0.1...v1.1.0-rc.1) (2025-08-11)
+
+### Features
+
+* add semantic versioning ([6ded2ac](https://github.com/mpekhota/semantic-release/commit/6ded2ac59c32e76f90de733340b2316306829956))
+
 ## [1.0.1](https://github.com/mpekhota/semantic-release/compare/v1.0.0...v1.0.1) (2025-08-11)
 
 ### Bug Fixes
