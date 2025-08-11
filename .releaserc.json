@@ -50,4 +50,4 @@
   ],
   "tagFormat": "v${version}",
   "repositoryUrl": "https://github.com/mpekhota/semantic-release.git"
-}.releaserc.json
+}
