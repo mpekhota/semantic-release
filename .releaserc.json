@@ -1,13 +1,7 @@
 {
   "branches": [
-    {
-      "name": "main",
-      "prerelease": "rc"
-    },
-    {
-      "name": "release/*",
-      "prerelease": false
-    }
+    { "name": "main", "prerelease": "rc" },
+    { "name": "release/*", "prerelease": false }
   ],
   "plugins": [
     [
@@ -15,38 +9,33 @@
       {
         "preset": "conventionalcommits",
         "releaseRules": [
-          {"type": "feat", "release": "minor"},
-          {"type": "fix", "release": "patch"},
-          {"type": "perf", "release": "patch"},
-          {"type": "docs", "release": "patch"},
-          {"type": "chore", "release": "patch"},
-          {"type": "style", "release": false},
-          {"type": "refactor", "release": "patch"},
-          {"type": "test", "release": false}
+          { "type": "feat", "release": "minor" },
+          { "type": "fix", "release": "patch" },
+          { "type": "perf", "release": "patch" },
+          { "type": "docs", "release": "patch" },
+          { "type": "chore", "release": "patch" },
+          { "type": "style", "release": false },
+          { "type": "refactor", "release": "patch" },
+          { "type": "test", "release": false }
         ]
       }
     ],
     [
       "@semantic-release/release-notes-generator",
-      {
-        "preset": "conventionalcommits"
-      }
+      { "preset": "conventionalcommits" }
     ],
     [
       "@semantic-release/changelog",
-      {
-        "changelogFile": "CHANGELOG.md"
-      }
+      { "changelogFile": "CHANGELOG.md" }
     ],
     [
       "@semantic-release/git",
       {
-        "assets": [
-          "CHANGELOG.md"
-        ],
+        "assets": ["CHANGELOG.md"],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
-    ]
+    ],
+    "@semantic-release/github"
   ],
   "tagFormat": "v${version}",
   "repositoryUrl": "https://github.com/mpekhota/semantic-release.git"
