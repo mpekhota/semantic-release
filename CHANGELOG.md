@@ -1,3 +1,5 @@
+## [1.1.0-rc.2](https://github.com/mpekhota/semantic-release/compare/v1.1.0-rc.1...v1.1.0-rc.2) (2025-08-11)
+
 ## [1.1.0-rc.1](https://github.com/mpekhota/semantic-release/compare/v1.0.1...v1.1.0-rc.1) (2025-08-11)
 
 ### Features
